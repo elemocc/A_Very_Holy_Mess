@@ -5,25 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>A Very Holy Mess</title>
+  <meta name="description" content="A Very Holy Mess is a cooperative hybrid board game with a companion app for the Pinacoteca Nazionale di Bologna." />
 
+  <!-- Favicon / meta icon -->
+  <link rel="icon" type="image/png" href="assets/img/logo/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Modern+Antiqua&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
   <header class="navbar">
-    <a href="#home" class="logo">🐉 A Very Holy Mess</a>
+    <a href="#home" class="logo-link">
+      <img src="assets/img/logo/logo.svg" alt="A Very Holy Mess logo" class="logo-img" />
+      <span>A Very Holy Mess</span>
+    </a>
 
     <nav>
-      <a href="#project">Project</a>
-      <a href="#gameplay">Gameplay</a>
+      <a href="#presentation">Presentation</a>
+      <a href="#twine">Twine</a>
       <a href="#prototype">Prototype</a>
-      <a href="#materials">Materials</a>
+      <a href="#brief">Design Brief</a>
       <a href="#team">Team</a>
-      <a href="#disclaimer">Disclaimer</a>
+      <a href="#statements">Statements</a>
     </nav>
   </header>
 
   <main>
+    <!-- HOME -->
     <section id="home" class="hero">
       <div class="hero-content">
         <p class="eyebrow">Pinacoteca Nazionale di Bologna</p>
@@ -38,180 +53,167 @@
         </p>
 
         <div class="buttons">
-          <a href="#project" class="button primary">Begin the Quest</a>
+          <a href="#presentation" class="button primary">Start the Quest</a>
           <a href="https://github.com/elemocc/A_Very_Holy_Mess" class="button secondary" target="_blank">
-            GitHub Repo
+            GitHub Repository
           </a>
         </div>
       </div>
     </section>
 
-    <section id="project" class="section">
+    <!-- PRESENTATION -->
+    <section id="presentation" class="section">
       <div class="section-header">
-        <p class="eyebrow">🕯️ Project</p>
-        <h2>From artwork to adventure</h2>
+        <p class="eyebrow">📽️ Presentation</p>
+        <h2>Project Presentation</h2>
+      </div>
+
+      <div class="content-card large-card">
+        <p>
+          This section will contain the final Canva presentation of the project.
+          The presentation will summarise the concept, design process, game mechanics,
+          user journey, prototype, and final outcomes of <em>A Very Holy Mess</em>.
+        </p>
+
+        <!-- Replace # with your Canva link when ready -->
+        <a href="#" class="text-link disabled-link">
+          Canva presentation coming soon
+        </a>
+      </div>
+    </section>
+
+    <!-- TWINE -->
+    <section id="twine" class="section dark">
+      <div class="section-header">
+        <p class="eyebrow">🧩 Twine</p>
+        <h2>Interactive Narrative Prototype</h2>
       </div>
 
       <div class="two-columns">
         <div>
           <p>
-            <em>A Very Holy Mess</em> starts from Vitale da Bologna’s
-            <em>San Giorgio e il drago</em>. Players become Saint George’s guardian
-            angels and must help him recover and empower his lost weapon before the
-            dragon destroys him.
+            The Twine prototype is used to test the interactive narrative structure
+            of the game. It follows the player through the main quest, from the first
+            encounter with Saint George to the final battle against the dragon.
           </p>
 
           <p>
-            The project connects physical museum exploration, artwork observation,
-            app-based interaction, storytelling, and tabletop game components.
+            Through Twine, we prototyped dialogues, choices, challenges, transitions
+            between artworks, and narrative consequences.
           </p>
         </div>
 
-        <div class="card">
-          <h3>Main Goals</h3>
-          <ul>
-            <li>Encourage careful observation of artworks</li>
-            <li>Make religious and historical subjects more accessible</li>
-            <li>Transform the museum visit into an active mission</li>
-            <li>Extend the experience at home through cards and QR codes</li>
-          </ul>
+        <div class="content-card">
+          <h3>Twine Prototype</h3>
+          <p>
+            The final public link to the Twine prototype will be added here.
+          </p>
+
+          <!-- Replace # with your Twine link when ready -->
+          <a href="#" class="text-link disabled-link">
+            Twine link coming soon
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="gameplay" class="section dark">
-      <div class="section-header">
-        <p class="eyebrow">🎮 Gameplay</p>
-        <h2>How the experience works</h2>
-      </div>
-
-      <div class="grid">
-        <article class="feature-card">
-          <h3>1. Receive a Quest</h3>
-          <p>
-            Saint George asks the player for help and gives the first mission.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>2. Explore the Museum</h3>
-          <p>
-            Players move through museum zones and search for the correct artworks.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>3. Scan the Artwork</h3>
-          <p>
-            The companion app activates dialogues, clues, animations, and challenges.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>4. Complete Challenges</h3>
-          <p>
-            Players solve mini-games based on tracing, tapping, pressing, scrolling,
-            and observing visual details.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>5. Progress the Story</h3>
-          <p>
-            Each success unlocks the next quest and brings Saint George closer to victory.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>6. Defeat the Dragon</h3>
-          <p>
-            The game is won when players return the empowered weapon to Saint George in time.
-          </p>
-        </article>
-      </div>
-    </section>
-
+    <!-- PROTOTYPE -->
     <section id="prototype" class="section">
       <div class="section-header">
-        <p class="eyebrow">🧩 Prototype</p>
-        <h2>Interactive narrative and design outputs</h2>
+        <p class="eyebrow">🎮 Prototype</p>
+        <h2>App, Cards and Figma Prototype</h2>
       </div>
 
       <div class="two-columns">
-        <div class="card">
-          <h3>Twine Prototype</h3>
+        <div class="content-card">
+          <h3>Figma Prototype</h3>
           <p>
-            The Twine prototype tests the narrative structure, choices, quests, artworks,
-            and challenge progression.
+            The Figma prototype will show the structure of the companion app:
+            onboarding, artwork scanning, challenge screens, timer, feedback, and
+            narrative progression.
           </p>
 
-          <a href="prototype/twine.html" class="text-link" target="_blank">
-            Play the Twine prototype →
+          <!-- Replace # with your Figma link when ready -->
+          <a href="#" class="text-link disabled-link">
+            Figma prototype coming soon
           </a>
         </div>
 
-        <div class="card">
-          <h3>Design Brief</h3>
-          <p>
-            The design brief documents the research, concept, game mechanics, user flow,
-            user journey, innovation, and project conclusions.
-          </p>
-
-          <a href="assets/documents/design-brief.pdf" class="text-link" target="_blank">
-            Read the design brief →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="materials" class="section dark">
-      <div class="section-header">
-        <p class="eyebrow">🃏 Materials</p>
-        <h2>Hybrid components</h2>
-      </div>
-
-      <div class="grid">
-        <article class="feature-card">
-          <h3>Artwork Cards</h3>
-          <p>
-            Cards reproduce selected artworks and act as physical keys for at-home play.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <h3>Challenge Cards</h3>
-          <p>
-            Randomised challenges support replayability and different game sessions.
-          </p>
-        </article>
-
-        <article class="feature-card">
+        <div class="content-card">
           <h3>Companion App</h3>
           <p>
-            The app manages onboarding, clues, dialogue, timer, penalties, and progression.
+            The companion app acts as the digital game master. It guides the player,
+            activates the artworks, gives clues, validates answers, manages the timer,
+            and connects each challenge to the story.
           </p>
+        </div>
+      </div>
+
+      <div class="prototype-grid">
+        <article class="media-card">
+          <img src="assets/images/cards.jpg" alt="Artwork and challenge cards prototype" />
+          <div>
+            <h3>Cards</h3>
+            <p>
+              Artwork Cards and Challenge Cards allow the experience to be played at home.
+              The cards reproduce selected paintings and act as physical keys to unlock
+              digital content through the companion app.
+            </p>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <img src="assets/images/app.jpg" alt="Companion app prototype" />
+          <div>
+            <h3>App</h3>
+            <p>
+              The app supports both museum and at-home play. In the museum, it works as
+              an AR tool; at home, it activates digital content through cards and QR codes.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- DESIGN BRIEF -->
+    <section id="brief" class="section dark">
+      <div class="section-header">
+        <p class="eyebrow">📄 Design Brief</p>
+        <h2>Download the Design Brief</h2>
+      </div>
+
+      <div class="content-card large-card">
+        <p>
+          The design brief documents the full project: research, pain points, related work,
+          design process, concept, game mechanics, user flow, user journey, innovation,
+          conclusion, and appendix.
+        </p>
+
+        <a href="assets/documents/design-brief.pdf" class="button primary" download>
+          Download Design Brief
+        </a>
+      </div>
+    </section>
+
+    <!-- TEAM -->
     <section id="team" class="section">
       <div class="section-header">
         <p class="eyebrow">👥 Team</p>
-        <h2>Project developed by</h2>
+        <h2>Project Team</h2>
       </div>
 
       <div class="team-grid">
-        <div class="team-card">
+        <article class="team-card">
           <h3>Chiara Genovese</h3>
-        </div>
+        </article>
 
-        <div class="team-card">
+        <article class="team-card">
           <h3>Kielyn C. Madayag</h3>
-        </div>
+        </article>
 
-        <div class="team-card">
+        <article class="team-card">
           <h3>Elena Mocci</h3>
-        </div>
+        </article>
       </div>
 
       <p class="centered">
@@ -221,19 +223,28 @@
       </p>
     </section>
 
-    <section id="disclaimer" class="section dark">
+    <!-- AI STATEMENT + DISCLAIMER -->
+    <section id="statements" class="section dark">
       <div class="section-header">
-        <p class="eyebrow">⚠️ Disclaimer</p>
-        <h2>Academic and AI statement</h2>
+        <p class="eyebrow">⚠️ Statements</p>
+        <h2>Academic Disclaimer and AI Statement</h2>
       </div>
 
       <div class="two-columns">
-        <div class="card">
+        <div class="content-card">
           <h3>Academic Disclaimer</h3>
+
           <p>
-            This project was developed as part of a university exam. It is an academic
-            design prototype created for educational purposes and is not an official
-            product, application, or commissioned project of the Pinacoteca Nazionale di Bologna.
+            This project was developed as part of a university exam for the course
+            <strong>Digital Heritage and Multimedia</strong>, within the
+            <strong>Digital Humanities and Digital Knowledge</strong> programme at the
+            <strong>Alma Mater Studiorum – Università di Bologna</strong>.
+          </p>
+
+          <p>
+            <em>A Very Holy Mess</em> is an academic design prototype created for
+            educational and research purposes. It is not an official product, application,
+            or commissioned project of the Pinacoteca Nazionale di Bologna.
           </p>
 
           <p>
@@ -241,10 +252,18 @@
             inside the museum with their own camera equipment and are included only as
             part of the academic prototype and design documentation.
           </p>
+
+          <p>
+            All references to the museum, its artworks, and its collection are used
+            exclusively for study, design experimentation, and cultural heritage
+            prototyping. Any external artwork images or additional visual materials,
+            if included, belong to their respective institutions or rights holders.
+          </p>
         </div>
 
-        <div class="card">
+        <div class="content-card">
           <h3>AI Statement</h3>
+
           <p>
             The authors used AI-assisted tools to support the writing process and the
             generation of images and videos as samples of what the final product could
@@ -252,10 +271,16 @@
           </p>
 
           <p>
-            ChatGPT by OpenAI and Gemini by Google were used for writing support and
-            image processing, while Pippit by ByteDance was used for video generation.
-            All content, design decisions, research findings, game mechanics, and
-            narrative structure are the result of the authors’ own work.
+            The AI tools used are <strong>ChatGPT by OpenAI</strong> and
+            <strong>Gemini by Google</strong> for writing support and image processing,
+            and <strong>Pippit by ByteDance</strong> for video generation.
+          </p>
+
+          <p>
+            All content, design decisions, research findings, game mechanics, narrative
+            structure, and project outcomes are the result of the authors’ own work.
+            AI tools were used only as writing, visual, and graphic support tools, and
+            not as sources of data, research evidence, or design decisions.
           </p>
         </div>
       </div>
@@ -263,7 +288,9 @@
   </main>
 
   <footer>
-    <p>© 2026 A Very Holy Mess — Academic project for DHDK, Università di Bologna.</p>
+    <p>
+      © 2026 A Very Holy Mess — Academic project for Digital Heritage and Multimedia.
+    </p>
   </footer>
 </body>
 </html>
