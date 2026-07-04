@@ -11,7 +11,7 @@ The game can be played both inside the museum and at home, combining physical co
 
 ## Academic Disclaimer
 
-This project was developed as part of a university exam for the course **Digital Heritage and Multimedia**, within the **Digital Humanities and Digital Knowledge** programme at the **Alma Mater Studiorum – Università di Bologna**.
+This project was developed as part of a university exam for the **Interaction Media Design** part of the course **Digital Heritage and Multimedia**, within the **Digital Humanities and Digital Knowledge** programme at the **Alma Mater Studiorum – Università di Bologna**.
 
 *A Very Holy Mess* is an academic design prototype created for educational purposes. It is not an official product, application, or commissioned project of the **Pinacoteca Nazionale di Bologna**.
 
