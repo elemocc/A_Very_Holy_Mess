@@ -8,7 +8,6 @@ The project starts from Vitale da Bologna’s painting *San Giorgio e il drago* 
 
 The game can be played both inside the museum and at home, combining physical components, digital interaction, artwork observation, and narrative progression.
 
---
 
 ## Academic Disclaimer
 
@@ -20,7 +19,6 @@ Most of the photographs used in this repository were taken by the authors inside
 
 All references to the museum, its artworks, and its collection are used exclusively for study. Any external artwork images or additional visual materials, if included, belong to their respective institutions or rights holders and must be used according to their applicable licences.
 
---
 
 ## AI Statement
 
