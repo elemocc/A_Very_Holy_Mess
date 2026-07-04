@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>A Very Holy Mess</title>
-  <meta name="description" content="A Very Holy Mess is a cooperative hybrid board game with a companion app for the Pinacoteca Nazionale di Bologna." />
+  <meta
+    name="description"
+    content="A Very Holy Mess is a cooperative hybrid board game with a companion app for the Pinacoteca Nazionale di Bologna."
+  />
 
   <!-- Favicon / meta icon -->
-  <link rel="icon" href="./img/logo/favicon.svg">
+  <link rel="icon" href="assets/img/logo/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Modern+Antiqua&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Modern+Antiqua&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css" />
@@ -22,7 +28,7 @@
 
 <body>
   <header class="navbar">
-    <a href="#home" class="logo-link">
+    <a href="#home" class="logo-link" aria-label="A Very Holy Mess home">
       <img
         src="assets/img/logo/favicon.svg"
         alt="A Very Holy Mess logo"
@@ -35,7 +41,7 @@
       </div>
     </a>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="#presentation">Presentation</a>
       <a href="#twine">Twine</a>
       <a href="#prototype">Prototype</a>
@@ -51,18 +57,30 @@
       <div class="hero-content">
         <p class="eyebrow">Pinacoteca Nazionale di Bologna</p>
 
-        <img src="assets/img/logo/logo.svg" alt="A Very Holy Mess logo" class="hero-logo-img" />
+        <h1 class="sr-only">A Very Holy Mess</h1>
 
-        <h2>The dragon is ready. Saint George is not.</h2>
+        <img
+          src="assets/img/logo/logo.svg"
+          alt="A Very Holy Mess"
+          class="hero-title-img"
+        />
 
-        <p>
+        <p class="hero-tagline">The dragon is ready. Saint George is not.</p>
+
+        <p class="hero-description">
           A cooperative hybrid board game with a companion app, designed to transform
           the museum visit into an active narrative quest.
         </p>
 
         <div class="buttons">
           <a href="#presentation" class="button primary">Start the Quest</a>
-          <a href="https://github.com/elemocc/A_Very_Holy_Mess" class="button secondary" target="_blank">
+
+          <a
+            href="https://github.com/elemocc/A_Very_Holy_Mess"
+            class="button secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub Repository
           </a>
         </div>
@@ -159,7 +177,11 @@
 
       <div class="prototype-grid">
         <article class="media-card">
-          <img src="assets/images/cards.jpg" alt="Artwork and challenge cards prototype" />
+          <img
+            src="assets/images/cards.jpg"
+            alt="Artwork and challenge cards prototype"
+          />
+
           <div>
             <h3>Cards</h3>
             <p>
@@ -171,7 +193,11 @@
         </article>
 
         <article class="media-card">
-          <img src="assets/images/app.jpg" alt="Companion app prototype" />
+          <img
+            src="assets/images/app.jpg"
+            alt="Companion app prototype"
+          />
+
           <div>
             <h3>App</h3>
             <p>
@@ -197,7 +223,11 @@
           conclusion, and appendix.
         </p>
 
-        <a href="assets/documents/design-brief.pdf" class="button primary" download>
+        <a
+          href="assets/documents/design-brief.pdf"
+          class="button primary"
+          download
+        >
           Download Design Brief
         </a>
       </div>
