@@ -1,0 +1,256 @@
+:root {
+  --bg: #180b06;
+  --bg-soft: #26110a;
+  --bg-card: #35180d;
+  --gold: #d8ad52;
+  --gold-light: #f6d98a;
+  --text: #f5e7c8;
+  --muted: #c6a97c;
+  --red: #7b1e14;
+  --red-dark: #451008;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(24, 11, 6, 0.88);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(216, 173, 82, 0.25);
+}
+
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--gold-light);
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold-light);
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 160px 8% 100px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(24, 11, 6, 0.45), rgba(24, 11, 6, 0.95)),
+    url("../img/saint-george.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3.8rem, 10vw, 7rem);
+  line-height: 0.9;
+  color: var(--gold-light);
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.65);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  margin: 12px 0 24px;
+  color: var(--gold-light);
+}
+
+h3 {
+  color: var(--gold-light);
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.hero p {
+  max-width: 640px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.button {
+  padding: 13px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--gold);
+}
+
+.button.primary {
+  background: var(--gold);
+  color: #1a0b05;
+}
+
+.button.secondary {
+  color: var(--gold-light);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 95px 8%;
+  background: var(--bg);
+}
+
+.section.dark {
+  background:
+    radial-gradient(circle at top left, rgba(216, 173, 82, 0.12), transparent 35%),
+    var(--bg-soft);
+}
+
+.section-header {
+  max-width: 780px;
+  margin-bottom: 42px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card,
+.feature-card,
+.team-card {
+  padding: 28px;
+  background: linear-gradient(145deg, rgba(53, 24, 13, 0.95), rgba(69, 16, 8, 0.95));
+  border: 1px solid rgba(216, 173, 82, 0.25);
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card {
+  min-height: 210px;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.text-link {
+  color: var(--gold-light);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+}
+
+.text-link:hover {
+  color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 28px 8%;
+  text-align: center;
+  background: #0f0503;
+  border-top: 1px solid rgba(216, 173, 82, 0.25);
+}
+
+footer p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    position: static;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 90px;
+  }
+
+  .two-columns,
+  .grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
