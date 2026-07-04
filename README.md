@@ -12,7 +12,7 @@ The game can be played both inside the museum and at home, combining physical co
 
 The experience is available at the following link [Twine](https://elemocc.github.io/A_Very_Holy_Mess/twine/A%20Very%20Holy%20Mess.html)
 
-Download the [Design Brief PDF](https://github.com/elemocc/A_Very_Holy_Mess/raw/main/assets/documents/design-brief.pdf)
+Download the [Design Brief PDF](https://github.com/elemocc/A_Very_Holy_Mess/raw/main/assets/DesignBrief_Paper_Exam.pdf)
 
 ## 👥 Team
 
