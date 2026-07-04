@@ -10,6 +10,8 @@ The project starts from Vitale da Bologna’s painting *San Giorgio e il drago* 
 
 The game can be played both inside the museum and at home, combining physical components, digital interaction, artwork observation, and narrative progression.
 
+[Twine](https://elemocc.github.io/A_Very_Holy_Mess/twine/A%20Very%20Holy%20Mess.html)
+
 ## 👥 Team
 
 Project developed by:
