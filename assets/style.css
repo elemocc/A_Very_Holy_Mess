@@ -333,15 +333,22 @@ em {
 
 .prototype-showcase {
   display: grid;
-  grid-template-columns: minmax(320px, 0.85fr) minmax(520px, 1.15fr);
-  gap: 28px;
-  margin-top: 30px;
-  align-items: start;
+  gap: 42px;
+  margin-top: 42px;
 }
 
-.figma-card,
+.prototype-block {
+  width: 100%;
+}
+
+.app-prototype-card {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 .cards-showcase-card {
-  overflow: hidden;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .card-heading-row {
@@ -381,7 +388,7 @@ em {
 .figma-phone-frame {
   width: min(100%, 390px);
   aspect-ratio: 9 / 16;
-  margin: 0 auto 24px;
+  margin: 28px auto 0;
   padding: 12px;
   border-radius: 34px;
   background:
@@ -432,7 +439,7 @@ em {
 
 .board-preview img {
   width: 100%;
-  max-height: 560px;
+  max-height: 620px;
   object-fit: contain;
   background:
     radial-gradient(circle at center, rgba(216, 173, 82, 0.08), transparent 60%),
@@ -447,7 +454,7 @@ em {
 }
 
 .featured-cards-grid img {
-  max-height: 520px;
+  max-height: 540px;
   object-fit: contain;
 }
 
@@ -527,16 +534,6 @@ footer p {
 
 /* RESPONSIVE */
 
-@media (max-width: 1200px) {
-  .prototype-showcase {
-    grid-template-columns: 1fr;
-  }
-
-  .app-prototype-card {
-    max-width: 620px;
-  }
-}
-
 @media (max-width: 1100px) {
   .navbar {
     padding-inline: 5%;
@@ -556,6 +553,10 @@ footer p {
 
   .logo-subtitle {
     font-size: 0.76rem;
+  }
+
+  .cards-showcase-card {
+    max-width: 100%;
   }
 }
 
