@@ -1,6 +1,6 @@
 # 🐉 A Very Holy Mess
 
-**The dragon is ready. Saint George is not.**
+**_The dragon is ready. Saint George is not._**
 
 
 
