@@ -319,7 +319,7 @@ em {
 
 .two-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
   align-items: start;
 }
@@ -334,6 +334,7 @@ em {
   border-radius: 24px;
   padding: 30px;
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.25);
+  min-width: 0;
 }
 
 .large-card {
@@ -415,20 +416,28 @@ em {
   display: grid;
   gap: 42px;
   margin-top: 42px;
+  width: 100%;
+  min-width: 0;
 }
 
 .prototype-block {
   width: 100%;
+  min-width: 0;
 }
 
 .app-prototype-card {
+  width: 100%;
   max-width: 760px;
   margin: 0 auto;
+  min-width: 0;
 }
 
 .cards-showcase-card {
+  width: 100%;
   max-width: 1180px;
   margin: 0 auto;
+  overflow: hidden;
+  min-width: 0;
 }
 
 /* FIGMA APP EMBED */
@@ -463,10 +472,13 @@ em {
   display: grid;
   gap: 24px;
   margin-top: 24px;
+  width: 100%;
+  min-width: 0;
 }
 
 .cards-gallery figure {
   margin: 0;
+  min-width: 0;
 }
 
 .cards-gallery figcaption {
@@ -474,6 +486,11 @@ em {
   color: var(--muted);
   font-size: 0.95rem;
   text-align: center;
+}
+
+.board-preview {
+  width: 100%;
+  min-width: 0;
 }
 
 .board-preview img {
@@ -491,12 +508,15 @@ em {
 
 .prototype-card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  width: 100%;
+  min-width: 0;
 }
 
 .prototype-card-item {
   margin: 0;
+  min-width: 0;
 }
 
 .prototype-card-item-wide {
@@ -504,7 +524,9 @@ em {
 }
 
 .prototype-card-frame {
+  width: 100%;
   height: 430px;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,7 +551,6 @@ em {
 }
 
 .prototype-card-frame-scroll {
-  height: 430px;
   justify-content: flex-start;
   align-items: center;
   overflow-x: auto;
@@ -551,7 +572,7 @@ em {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-bottom: 34px;
 }
@@ -693,12 +714,28 @@ footer p {
     height: 620px;
   }
 
+  .prototype-showcase {
+    gap: 34px;
+  }
+
+  .app-prototype-card,
+  .cards-showcase-card {
+    max-width: 100%;
+  }
+
   .figma-phone-frame {
-    width: min(100%, 360px);
+    width: min(100%, 340px);
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .figma-phone-frame iframe {
+    border-radius: 22px;
   }
 
   .prototype-card-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .prototype-card-item-wide {
@@ -709,8 +746,31 @@ footer p {
     height: 380px;
   }
 
+  .board-preview img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 620px) {
+  .cards-showcase-card,
+  .app-prototype-card {
+    padding: 22px;
+  }
+
+  .figma-phone-frame {
+    width: min(100%, 310px);
+  }
+
+  .prototype-card-frame {
+    height: 340px;
+  }
+
   .prototype-card-frame-scroll {
-    height: 380px;
+    padding: 14px;
+  }
+
+  .board-preview img {
+    max-height: 420px;
   }
 }
 
@@ -751,12 +811,28 @@ footer p {
   .twine-frame {
     height: 560px;
   }
+}
+
+@media (max-width: 420px) {
+  .cards-showcase-card,
+  .app-prototype-card {
+    padding: 18px;
+  }
+
+  .figma-phone-frame {
+    width: min(100%, 280px);
+    padding: 8px;
+  }
 
   .prototype-card-frame {
-    height: 330px;
+    height: 300px;
   }
 
   .prototype-card-frame-scroll {
-    height: 330px;
+    padding: 12px;
+  }
+
+  .board-preview img {
+    max-height: 360px;
   }
 }
