@@ -150,6 +150,8 @@ nav a:hover {
   padding: 165px 7% 110px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   background:
     radial-gradient(circle at top left, rgba(216, 173, 82, 0.22), transparent 31%),
     radial-gradient(circle at 75% 35%, rgba(246, 217, 138, 0.08), transparent 25%),
@@ -158,19 +160,20 @@ nav a:hover {
 
 .hero-content {
   max-width: 860px;
+  margin: 0 auto;
 }
 
 .hero-title-img {
   display: block;
   width: min(650px, 100%);
   height: auto;
-  margin: 0 0 22px;
+  margin: 0 auto 22px;
   filter: drop-shadow(0 16px 34px rgba(0, 0, 0, 0.55));
 }
 
 .hero-tagline {
   max-width: 720px;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
   font-family: var(--font-title);
   color: var(--gold-light);
   font-size: clamp(1.6rem, 3.2vw, 2.65rem);
@@ -180,6 +183,8 @@ nav a:hover {
 
 .hero-description {
   max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.25rem;
 }
 
@@ -252,6 +257,7 @@ em {
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-top: 34px;
 }
@@ -409,7 +415,7 @@ em {
   background: #000;
 }
 
-/* CARDS GALLERY */
+/* PHYSICAL PROTOTYPE GALLERY */
 
 .cards-gallery {
   display: grid;
@@ -419,15 +425,6 @@ em {
 
 .cards-gallery figure {
   margin: 0;
-}
-
-.cards-gallery img {
-  width: 100%;
-  display: block;
-  border-radius: 18px;
-  border: 1px solid rgba(216, 173, 82, 0.25);
-  background: rgba(22, 9, 5, 0.45);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
 .cards-gallery figcaption {
@@ -441,49 +438,68 @@ em {
   width: 100%;
   max-height: 620px;
   object-fit: contain;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(216, 173, 82, 0.25);
   background:
     radial-gradient(circle at center, rgba(216, 173, 82, 0.08), transparent 60%),
     rgba(14, 4, 2, 0.45);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
-.featured-cards-grid {
+.prototype-card-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
 }
 
-.featured-cards-grid img {
-  max-height: 540px;
-  object-fit: contain;
+.prototype-card-item {
+  margin: 0;
 }
 
-.wide-card-preview {
+.prototype-card-item-wide {
+  grid-column: 1 / -1;
+}
+
+.prototype-card-frame {
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(216, 173, 82, 0.25);
+  background:
+    radial-gradient(circle at center, rgba(216, 173, 82, 0.08), transparent 60%),
+    rgba(14, 4, 2, 0.45);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
-.panorama-scroll {
+.prototype-card-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.prototype-card-frame-scroll {
+  justify-content: flex-start;
   overflow-x: auto;
-  padding-bottom: 8px;
+  overflow-y: hidden;
+  padding: 18px;
   scrollbar-color: var(--gold) rgba(22, 9, 5, 0.5);
 }
 
-.panorama-scroll img {
-  min-width: 900px;
-  max-height: 260px;
+.prototype-card-frame-scroll img {
+  width: auto;
+  min-width: 1200px;
+  max-width: none;
+  height: 100%;
   object-fit: contain;
-}
-
-.challenge-zone-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.challenge-zone-grid img {
-  aspect-ratio: 1 / 1.18;
-  object-fit: contain;
-  padding: 10px;
 }
 
 /* TEAM */
@@ -601,15 +617,8 @@ footer p {
     padding-bottom: 90px;
   }
 
-  .hero-content {
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .hero-title-img {
     width: min(430px, 90vw);
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .hero-tagline {
@@ -620,10 +629,6 @@ footer p {
   .hero-description {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .buttons {
-    justify-content: center;
   }
 
   .two-columns,
@@ -643,16 +648,20 @@ footer p {
     width: min(100%, 360px);
   }
 
-  .featured-cards-grid {
+  .prototype-card-grid {
     grid-template-columns: 1fr;
   }
 
-  .challenge-zone-grid {
-    grid-template-columns: 1fr;
+  .prototype-card-item-wide {
+    grid-column: auto;
   }
 
-  .panorama-scroll img {
-    min-width: 760px;
+  .prototype-card-frame {
+    height: 380px;
+  }
+
+  .prototype-card-frame-scroll img {
+    min-width: 980px;
   }
 }
 
@@ -690,7 +699,11 @@ footer p {
     padding: 24px;
   }
 
-  .panorama-scroll img {
-    min-width: 640px;
+  .prototype-card-frame {
+    height: 330px;
+  }
+
+  .prototype-card-frame-scroll img {
+    min-width: 820px;
   }
 }
