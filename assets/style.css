@@ -335,27 +335,7 @@ em {
   max-width: 900px;
 }
 
-/* PROTOTYPE SHOWCASE */
-
-.prototype-showcase {
-  display: grid;
-  gap: 42px;
-  margin-top: 42px;
-}
-
-.prototype-block {
-  width: 100%;
-}
-
-.app-prototype-card {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.cards-showcase-card {
-  max-width: 1180px;
-  margin: 0 auto;
-}
+/* SHARED CARD HEADER */
 
 .card-heading-row {
   display: flex;
@@ -387,6 +367,55 @@ em {
 
 .small-link:hover {
   color: white;
+}
+
+/* TWINE EMBED */
+
+.twine-preview-card {
+  overflow: hidden;
+}
+
+.twine-frame {
+  width: 100%;
+  height: 560px;
+  margin-top: 22px;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(216, 173, 82, 0.35);
+  background: #0e0402;
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.35),
+    inset 0 0 28px rgba(0, 0, 0, 0.65);
+}
+
+.twine-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  background: #000;
+}
+
+/* PROTOTYPE SHOWCASE */
+
+.prototype-showcase {
+  display: grid;
+  gap: 42px;
+  margin-top: 42px;
+}
+
+.prototype-block {
+  width: 100%;
+}
+
+.app-prototype-card {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.cards-showcase-card {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 /* FIGMA APP EMBED */
@@ -644,6 +673,10 @@ footer p {
     flex-direction: column;
   }
 
+  .twine-frame {
+    height: 520px;
+  }
+
   .figma-phone-frame {
     width: min(100%, 360px);
   }
@@ -697,6 +730,10 @@ footer p {
   .content-card,
   .team-card {
     padding: 24px;
+  }
+
+  .twine-frame {
+    height: 480px;
   }
 
   .prototype-card-frame {
