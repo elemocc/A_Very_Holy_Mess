@@ -661,19 +661,19 @@ em {
   color: white;
 }
 
-/* FOOTER */
-
-footer {
-  padding: 28px 7%;
-  text-align: center;
-  background: #0e0402;
-  border-top: 1px solid rgba(216, 173, 82, 0.25);
+.footer-credits {
+  margin-top: 8px;
+  font-size: 0.9rem;
 }
 
-footer p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
+.footer-credits a {
+  color: var(--gold-light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(216, 173, 82, 0.45);
+}
+
+.footer-credits a:hover {
+  color: white;
 }
 
 /* RESPONSIVE */
