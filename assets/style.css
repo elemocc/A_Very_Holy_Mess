@@ -579,12 +579,12 @@ em {
 
 .team-card {
   text-align: center;
-  min-height: 230px;
+  min-height: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 16px;
   position: relative;
   overflow: hidden;
 }
@@ -605,22 +605,12 @@ em {
   z-index: 1;
 }
 
-.team-role {
-  max-width: 260px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.45;
-  position: relative;
-  z-index: 1;
-}
-
 .team-github {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 6px;
+  margin-top: 4px;
   padding: 10px 16px;
   border-radius: 999px;
   border: 1px solid rgba(216, 173, 82, 0.55);
@@ -649,6 +639,12 @@ em {
   font-size: 0.8rem;
 }
 
+.centered {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 /* STATEMENTS */
 
 #statements a {
@@ -661,9 +657,32 @@ em {
   color: white;
 }
 
+/* FOOTER */
+
+footer {
+  padding: 28px 7%;
+  text-align: center;
+  background: #0e0402;
+  border-top: 1px solid rgba(216, 173, 82, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
 .footer-credits {
   margin-top: 8px;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .footer-credits a {
@@ -872,6 +891,10 @@ em {
 
   .twine-frame {
     height: 560px;
+  }
+
+  .footer-credits {
+    line-height: 1.8;
   }
 }
 
