@@ -4,7 +4,7 @@
 
 
 
-*A Very Holy Mess* is a cooperative hybrid board game with a companion app, designed as an educational and playful experience for the **[Pinacoteca Nazionale di Bologna](https://pinacotecabologna.beniculturali.it/)**.
+*A Very Holy Mess* is a cooperative hybrid board game with a companion app, designed as an educational and playful experience for the [Pinacoteca Nazionale di Bologna](https://pinacotecabologna.beniculturali.it/).
 
 The project starts from Vitale da Bologna’s painting *San Giorgio e il drago* and transforms the museum visit into an interactive narrative quest. Players take on the role of **Saint George’s guardian angel** and must help him recover and empower his lost weapon in order to defeat the dragon.
 
@@ -25,7 +25,7 @@ Project developed by:
 
 ## 📚 Academic Disclaimer
 
-This project was developed as part of a university exam for the **[Interaction Media Design](https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2025/533993)** part of the course **[Digital Heritage and Multimedia (I.C.)](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue?codiceMateria=B5059&annoAccademico=2025&codiceCorso=6736&single=True&search=True)** taught by Professors [Chiara Tartarini](https://www.unibo.it/sitoweb/chiara.tartarini) and [Sofia Pescarin](https://www.unibo.it/sitoweb/sofia.pescarin/), within the **[Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/index.html)** programme at the **[Alma Mater Studiorum – Università di Bologna](https://www.unibo.it/it)**.
+This project was developed as part of a university exam for the [Interaction Media Design](https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2025/533993) part of the course [Digital Heritage and Multimedia (I.C.)](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue?codiceMateria=B5059&annoAccademico=2025&codiceCorso=6736&single=True&search=True) taught by Professors [Chiara Tartarini](https://www.unibo.it/sitoweb/chiara.tartarini) and [Sofia Pescarin](https://www.unibo.it/sitoweb/sofia.pescarin/), within the [Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/index.html) programme at the [Alma Mater Studiorum – Università di Bologna](https://www.unibo.it/it).
 
 *A Very Holy Mess* is an academic design prototype created for educational purposes. It is not an official product, application, or commissioned project of the **Pinacoteca Nazionale di Bologna**.
 
