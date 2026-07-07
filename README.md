@@ -18,9 +18,9 @@ Download the [Design Brief PDF](https://github.com/elemocc/A_Very_Holy_Mess/raw/
 
 Project developed by:
 
-- **Chiara Genovese**
-- **Kielyn C. Madayag**
-- **Elena Mocci**
+- **[Chiara Genovese](https://github.com/Chiarag711)**
+- **[Kielyn C. Madayag](https://github.com/KielynCMadayag)**
+- **[Elena Mocci](https://github.com/elemocc)**
 
 
 ## 📚 Academic Disclaimer
